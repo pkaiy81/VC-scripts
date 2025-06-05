@@ -1,0 +1,9 @@
+type: operation-group
+description:
+label: "Check current certificate status"
+title:
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: multiple
+    config: "config/check_cert/op_*.yaml"

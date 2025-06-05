@@ -1,0 +1,7 @@
+type: operation
+description: "View SMS certificates"
+title: "View SMS certificates"
+label: "SMS certificates"
+entry_point:
+  module: operation.view_certificate
+  method: view_sms_certificates_in_vecs

@@ -1,0 +1,7 @@
+type: operation
+description: "Check ESXi certificate against vCenter database"
+title: ""
+label: "Check ESXi certificate against vCenter database"
+entry_point:
+  module: operation.esxi_certificate_operations
+  method: check_esxi_certificate_against_vcdb

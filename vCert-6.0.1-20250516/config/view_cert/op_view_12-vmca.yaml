@@ -1,0 +1,6 @@
+type: operation
+description: "View VMCA certificate"
+label: "VMCA certificate"
+entry_point:
+  module: operation.view_certificate
+  method: view_VMCA_Certificate

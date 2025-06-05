@@ -1,0 +1,7 @@
+type: operation
+description:
+title: "Checking vCenter Extension Thumbprints"
+label:
+entry_point:
+  module: operation.check_certificate
+  method: check_vcenter_extension_thumbprints

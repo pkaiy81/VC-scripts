@@ -1,0 +1,7 @@
+type: operation
+description:
+title: "View vCenter Extension Thumbprints"
+label: "vCenter Extension thumbprints"
+entry_point:
+  module: operation.view_certificate
+  method: view_vcenter_extension_thumbprints

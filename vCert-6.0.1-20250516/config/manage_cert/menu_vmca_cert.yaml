@@ -1,0 +1,20 @@
+type: menu
+description: 'Manage VMCA certificate'
+title: 'Select VMCA Certificate Replacement Method'
+label: 'VMCA certificate'
+items:
+  - type: single
+    config: 'config/manage_cert/vmca/op_replace-vmca-cert.yaml'
+  - type: single
+    config: 'config/manage_cert/vmca/op_replace-vmca-cert-and-reset-all.yaml'
+  - type: single
+    config: 'config/manage_cert/vmca/menu_custom-ca-signed-vmca-cert.yaml'
+  - type: navigation:return
+    label: 'Return to previous menu'
+    key: 'R'
+    default: true
+    hidden: true
+
+input:
+  text: 'Select an option [Return to the previous menu]: '
+  

@@ -1,0 +1,7 @@
+type: operation
+description:
+title: "Checking Certificate Revocation Lists"
+label:
+entry_point:
+  module: operation.check_certificate
+  method: check_crls

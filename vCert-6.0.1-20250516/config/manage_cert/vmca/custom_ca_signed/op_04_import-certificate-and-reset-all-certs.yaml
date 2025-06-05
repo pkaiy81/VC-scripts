@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Import CA-signed certificate and private key \n    and regenerate all certificates"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.reset_certificate"
+      method: "import_custom_ca_signed_vmca_certificate_and_reset_all"

@@ -1,0 +1,28 @@
+type: menu
+description: "vCert main menu"
+title: "{VCERT_DESC}"
+items:
+  - type: single
+    config: "config/op_check_cert.yaml"
+    default: True
+  - type: single
+    config: "config/menu_view_cert.yaml"
+  - type: single
+    config: "config/menu_manage_cert.yaml"
+  - type: single
+    config: "config/menu_manage_trust_anchors.yaml"
+  - type: single
+    config: "config/menu_check_config.yaml"
+  - type: single
+    config: "config/op_reset_cert_vmca.yaml"
+  - type: single
+    config: "config/menu_esxi_cert.yaml"
+  - type: single
+    config: "config/menu_restart_service.yaml"
+  - type: single
+    config: "config/op_generate_report.yaml"
+  - type: navigation:exit
+    label: "Exit"
+    key: "E"
+input:
+  text: "Select an option [{CURRENT_MENU[__DEFAULT__]}]: "

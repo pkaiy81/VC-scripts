@@ -1,0 +1,7 @@
+type: operation
+description: "Replace ESXi certificate"
+title: ""
+label: "Replace ESXi certificate"
+entry_point:
+  module: operation.esxi_certificate_operations
+  method: replace_esxi_certificate

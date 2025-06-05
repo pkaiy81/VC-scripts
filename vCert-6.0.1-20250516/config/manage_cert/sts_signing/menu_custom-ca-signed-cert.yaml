@@ -1,0 +1,13 @@
+type: menu
+description:
+title: "Replace STS Signing certificate with a custom CA-signed certificate"
+label: "Replace STS Signing certificate with a custom CA-signed certificate"
+items:
+  - type: multiple
+    config: "config/manage_cert/sts_signing/custom_ca_signed/op_*.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: True
+    hidden: True
+    use_label_as_key: True

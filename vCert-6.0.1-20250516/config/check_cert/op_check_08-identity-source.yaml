@@ -1,0 +1,7 @@
+type: operation
+description:
+title:
+label:
+entry_point:
+  module: operation.check_certificate
+  method: check_identity_source_certificates

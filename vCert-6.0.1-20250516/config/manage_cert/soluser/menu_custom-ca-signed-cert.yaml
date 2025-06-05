@@ -1,0 +1,13 @@
+type: menu
+description:
+title: "Replace Solution User certificates with CA-signed certificates (not recommended)"
+label: "Replace Solution User certificates with CA-signed certificates (not recommended)"
+items:
+  - type: multiple
+    config: "config/manage_cert/soluser/custom_ca_signed/op_*.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: True
+    hidden: True
+    use_label_as_key: True

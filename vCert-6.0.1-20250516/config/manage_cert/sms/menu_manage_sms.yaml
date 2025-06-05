@@ -1,0 +1,13 @@
+type: menu
+description:
+title: "Manage SMS Certificates"
+label: 
+items:
+  - type: multiple
+    config: "config/manage_cert/sms/op_*.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: True
+    hidden: True
+    use_label_as_key: True

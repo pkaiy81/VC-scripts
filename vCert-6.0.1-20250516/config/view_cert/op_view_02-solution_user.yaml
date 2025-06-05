@@ -1,0 +1,7 @@
+type: operation
+description: "View solution user certificates"
+title:
+label: "Solution User certificates"
+entry_point:
+  module: operation.view_certificate
+  method: view_solution_user_certificate

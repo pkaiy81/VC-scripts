@@ -1,0 +1,7 @@
+type: operation
+description: "View Smart Card certificates"
+label: "Smart Card CA certificates"
+condition: 'CAC_CONFIGURED'
+entry_point:
+  module: operation.view_certificate
+  method: view_smart_card_certificates

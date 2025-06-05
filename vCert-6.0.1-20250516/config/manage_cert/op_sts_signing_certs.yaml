@@ -1,0 +1,16 @@
+type: operation-group
+description: "Manage STS signing certificates"
+title:
+label: "STS signing certificates"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    config: "config/view_cert/op_view_11-sts.yaml"
+  - type: single
+    entry_point:
+      module: "lib.menu"
+      method: "Menu.run_menu_from_config"
+    arguments:
+      - name: "config"
+        value: "config/manage_cert/sts_signing/menu_sts-signing-certs.yaml"

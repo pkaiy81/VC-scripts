@@ -1,0 +1,17 @@
+type: menu
+description: "Manage Machine SSL certificate"
+title: "Select Machine SSL Certificate Replacement Method"
+label: "Machine SSL certificate"
+items:
+  - type: single
+    config: "config/manage_cert/machine_ssl/op_vmca-signed-cert.yaml"
+  - type: single
+    config: "config/manage_cert/machine_ssl/menu_custom-ca-signed-cert.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: true
+    hidden: true
+
+input:
+  text: "Select an option [Return to the previous menu]: "

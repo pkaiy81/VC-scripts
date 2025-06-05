@@ -1,0 +1,11 @@
+type: operation-group
+description:
+label: "Reset all certificates with VMCA-signed certificates"
+title:
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.reset_certificate"
+      method: "reset_all_certificates"

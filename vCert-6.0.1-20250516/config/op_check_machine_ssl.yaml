@@ -1,0 +1,6 @@
+type: operation
+title:
+label: Check Machine SSL certificate
+entry_point:
+  module: operation.checks_certificates
+  method: check_machine_ssl_certificate

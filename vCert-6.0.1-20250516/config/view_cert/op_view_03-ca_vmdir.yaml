@@ -1,0 +1,11 @@
+type: operation-group
+description: "View CA certificates in VMware Directory"
+title: "View CA certificates in VMware Directory"
+label: "CA certificates in VMware Directory"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: operation.view_certificate
+      method: view_ca_certificates_in_vmdir

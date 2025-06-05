@@ -1,0 +1,17 @@
+type: menu
+description: "Manage SSL Trust Anchors"
+title: "Manage SSL Trust Anchors"
+label: "Manage SSL trust anchors"
+items:
+  - type: single
+    config: "config/manage_cert/trust_anchors/menu_check_trust_anchors.yaml"
+  - type: single
+    config: "config/manage_cert/trust_anchors/op_update_trust_anchors.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: true
+    hidden: true
+
+input:
+  text: "Select an option [Return to the previous menu]: "

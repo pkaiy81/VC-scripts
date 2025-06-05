@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Import CA certificate(s) from a file"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "import_proxy_ca_certificates"

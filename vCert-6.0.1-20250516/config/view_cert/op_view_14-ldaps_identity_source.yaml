@@ -1,0 +1,12 @@
+type: operation-group
+description: "LDAPS Certificates"
+title: "LDAPS Certificates"
+label: "LDAPS Identity Source certificates"
+condition: 'HAS_LDAPS_IDENTITY_SOURCE'
+operations:
+  - type: single
+    config: 'config/op_prevalidate_credential.yaml'
+  - type: single
+    entry_point:
+      module: operation.view_certificate
+      method: view_ldaps_identity_source_certificates

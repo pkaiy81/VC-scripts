@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Import CA-signed Certificate and Key"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "import_custom_ca_signed_sts_signing_certificate"

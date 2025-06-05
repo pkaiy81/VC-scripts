@@ -1,0 +1,21 @@
+type: menu
+description: "Check SSL Trust Anchors"
+title: "Check SSL Trust Anchors"
+sub_title: "Additional output options:"
+label: "Check SSL Trust Anchors"
+run_once: True
+items:
+  - type: single
+    config: "config/manage_cert/trust_anchors/op_check_none.yaml"
+    default: True
+  - type: single
+    config: "config/manage_cert/trust_anchors/op_check_with_service_id.yaml"
+  - type: single
+    config: "config/manage_cert/trust_anchors/op_check_with_ep_uri.yaml"
+  - type: single
+    config: "config/manage_cert/trust_anchors/op_check_with_service_id_and_uri.yaml"
+  - type: single
+    config: "config/manage_cert/trust_anchors/op_check_with_fingerprint.yaml"
+
+input:
+  text: "Please select additional information options [{CURRENT_MENU[__DEFAULT__]}]: "

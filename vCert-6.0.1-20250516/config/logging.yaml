@@ -1,0 +1,30 @@
+version: 1
+
+disable_existing_loggers: false
+
+formatters:
+  file_format:
+    format: '%(asctime)s - [%(name)s - %(funcName)s] - %(levelname)s - %(message)s'
+    datefmt: '%Y-%m-%dT%H:%M:%S'
+  console_format:
+    format: '%(asctime)s - %(levelname)s - %(message)s'
+    datefmt: '%Y-%m-%dT%H:%M:%S'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: CRITICAL
+    formatter: console_format
+    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: file_format
+    filename: /var/log/vmware/vCert/vCert.log
+    # 20MB file size
+    maxBytes: 20000000
+    backupCount: 5
+
+root:
+  level: DEBUG
+  handlers: [console, file]

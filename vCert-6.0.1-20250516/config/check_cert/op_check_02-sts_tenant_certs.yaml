@@ -1,0 +1,7 @@
+type: operation
+description: "Check machine SSL certificate"
+title: "Checking STS Signing Certs & Signing Chains"
+label:
+entry_point:
+  module: operation.check_certificate
+  method: check_sts_tenant_certificates

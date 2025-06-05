@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Replace VMCA certificate with a self-signed certificate \n    and regenerate all certificates"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.reset_certificate"
+      method: "replace_vmca_cert_and_regenerate_all"

@@ -1,0 +1,12 @@
+type: operation-group
+description: 'Manage Smart Card CA certificates'
+title:
+label: 'Smart Card CA certificates'
+condition: 'CAC_CONFIGURED'
+operations:
+  - type: single
+    config: 'config/op_prevalidate_credential.yaml'
+  - type: single
+    entry_point:
+      module: 'operation.manage_certificate'
+      method: 'manage_smart_card_certificates'
