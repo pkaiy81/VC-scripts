@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Replace Solution User certificate with a VMCA-signed certificate"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.reset_certificate"
+      method: "manage_solution_user_certificate_with_vmca_signed"

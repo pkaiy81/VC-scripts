@@ -1,0 +1,7 @@
+type: operation
+description:
+title: "Checking SSL Trust Anchors"
+label:
+entry_point:
+  module: operation.check_certificate
+  method: check_ssl_trust_anchors

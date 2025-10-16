@@ -1,0 +1,7 @@
+type: operation
+description:
+title: 
+label: 
+entry_point:
+  module: operation.check_configuration
+  method: check_sts_configuration

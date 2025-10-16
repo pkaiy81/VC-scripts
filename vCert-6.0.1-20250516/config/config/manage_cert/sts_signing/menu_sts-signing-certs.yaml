@@ -1,0 +1,18 @@
+type: menu
+description: "Manage STS signing certificates"
+title: "Select STS Signing Certificate Replacement Method"
+label: "STS signing certificates"
+items:
+  - type: single
+    config: "config/manage_cert/sts_signing/op_vmca-signed-cert.yaml"
+  - type: single
+    config: "config/manage_cert/sts_signing/menu_custom-ca-signed-cert.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: True
+    hidden: True
+    use_label_as_key: True
+
+input:
+  text: "Select an option [Return to the previous menu]: "

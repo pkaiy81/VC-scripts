@@ -1,0 +1,17 @@
+type: menu
+description: "Manage Solution User certificates"
+title: "Select Solution User Certificate Replacement Method"
+label: "Solution User certificates"
+items:
+  - type: single
+    config: "config/manage_cert/soluser/op_vmca-signed-cert.yaml"
+  - type: single
+    config: "config/manage_cert/soluser/menu_custom-ca-signed-cert.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: true
+    hidden: true
+
+input:
+  text: "Select an option [Return to the previous menu]: "

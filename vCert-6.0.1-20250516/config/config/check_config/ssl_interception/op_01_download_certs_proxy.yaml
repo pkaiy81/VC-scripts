@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Download and import CA certificates from the proxy"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "download_proxy_ca_certificates"

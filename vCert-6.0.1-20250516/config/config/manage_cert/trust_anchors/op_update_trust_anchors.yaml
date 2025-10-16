@@ -1,0 +1,11 @@
+type: operation-group
+description: "Update SSL trust anchors"
+title:
+label: "Update SSL Trust Anchors"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "manage_ssl_trust_anchors"

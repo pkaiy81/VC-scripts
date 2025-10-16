@@ -1,0 +1,10 @@
+type: operation
+description:
+title:
+label: "Generate Certificate Signing Request and Private Key from custom OpenSSL configuration file"
+entry_point:
+  module: operation.reset_certificate
+  method: generate_csr_and_private_key_of_soluser
+arguments:
+  - name: custom_openssl_config
+    value: true

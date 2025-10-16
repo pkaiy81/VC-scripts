@@ -1,0 +1,7 @@
+type: operation
+title: 'Clear Expired Certificates in BACKUP_STORE in VECS'
+label: 'Clear expired certificates in BACKUP_STORE in VECS'
+condition: 'HAS_BACKUP_STORE'
+entry_point:
+  module: operation.manage_certificate
+  method: manage_expired_backup_store

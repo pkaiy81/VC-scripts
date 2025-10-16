@@ -1,0 +1,7 @@
+type: operation
+description: "Restart specific VMware service"
+title:
+label: "Restart specific VMware service"
+entry_point:
+  module: operation.restart_service
+  method: restart_specific_vmware_service

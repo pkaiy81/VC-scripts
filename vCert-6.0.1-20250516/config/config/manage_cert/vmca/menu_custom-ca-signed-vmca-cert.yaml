@@ -1,0 +1,13 @@
+type: menu
+description:
+title: "Replace VMCA certificate with a CA-signed certificate"
+label: "Replace VMCA certificate with a CA-signed certificate"
+items:
+  - type: multiple
+    config: "config/manage_cert/vmca/custom_ca_signed/op_*.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: true
+    hidden: true
+    use_label_as_key: True

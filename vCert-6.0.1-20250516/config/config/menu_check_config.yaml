@@ -1,0 +1,13 @@
+type: menu
+description: "Check configuration"
+title: "Configuration Check Menu"
+label: "Check configurations"
+items:
+  - type: multiple
+    config: "config/check_config/*.yaml"
+  - type: navigation:return
+    label: "Return to main menu"
+    key: "R"
+    default: True
+    use_label_as_key: True
+    hidden: True

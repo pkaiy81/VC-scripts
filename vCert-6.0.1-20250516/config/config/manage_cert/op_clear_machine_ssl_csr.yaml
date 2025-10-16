@@ -1,0 +1,7 @@
+type: operation
+title: 
+label: 'Clear Machine SSL CSR in VECS'
+condition: 'HAS_MACHINE_SSL_CSR'
+entry_point:
+  module: operation.manage_certificate
+  method: manage_machine_ssl_csr

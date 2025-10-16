@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# Copyright (c) 2024 Broadcom. All Rights Reserved.
-# Broadcom Confidential. The term "Broadcom" refers to Broadcom Inc.
+# Copyright (c) 2024-2025 Broadcom. All Rights Reserved.
+# The term "Broadcom" refers to Broadcom Inc.
 # and/or its subsidiaries.
 
 import argparse
@@ -19,6 +19,7 @@ from lib.environment import Environment
 from lib.exceptions import MenuExitException
 from lib.menu import Menu, MenuInput
 from lib.host_utils import init_env_host, VcVersion, get_vc_version, make_directory, remove_directory
+from lib.services import check_services_status
 from lib.vmdir import init_env_identity_source, init_env_cac
 from operation.common import verify_sso_credential, populate_sso_credential
 
@@ -61,6 +62,8 @@ def init_environment(args):
     init_env_cac()
 
     check_vc_version()
+
+    check_services_status()
 
     if args.password is not None:
         if args.user is None:
@@ -134,10 +137,17 @@ def check_vc_version():
     and the program exit immediately
     """
     vc_version = get_vc_version()
-    if vc_version != VcVersion.V7_0 and vc_version != VcVersion.V8_0:
+    if vc_version == VcVersion.Invalid:
         vc_version_full = Environment.get_environment().get_value('VC_VERSION')
-        print_text_error("Error: Unsupported vCenter version: {}.\n{} only supports vCenter version 7.0 or later.\n"
-                         .format(vc_version_full, VCERT_DESC))
+        print_text_error("Error: Unsupported vCenter version: {}.\n"
+                         "{} only supports versions {} to {}\n"
+                         .format(
+                             vc_version_full,
+                             VCERT_DESC,
+                             VcVersion.min(),
+                             VcVersion.max()
+                         )
+                        )
         sys.exit(1)
 
 

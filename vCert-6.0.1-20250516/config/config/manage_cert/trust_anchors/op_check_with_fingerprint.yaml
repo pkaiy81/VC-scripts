@@ -1,0 +1,14 @@
+type: operation-group
+description: "Check SSL trust anchors"
+title:
+label: "Show the SHA256 fingerprint of the certificates"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "check_ssl_trust_anchors"
+    arguments:
+      - name: "use_sha256_fingerprint"
+        value: true

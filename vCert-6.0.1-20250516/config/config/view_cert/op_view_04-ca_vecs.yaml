@@ -1,0 +1,7 @@
+type: operation
+description: "View CA certificates in VECS"
+title: "CA Certificates in TRUSTED_ROOTS store in VECS"
+label: "CA certificates in VECS"
+entry_point:
+  module: operation.view_certificate
+  method: view_ca_certificates_in_vecs

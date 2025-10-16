@@ -1,0 +1,13 @@
+type: menu
+description: "View certificate info"
+title: "View vCenter Certificates"
+label: "View certificate info"
+items:
+  - type: multiple
+    config: "config/view_cert/op_view_*.yaml"
+  - type: navigation:return
+    label: "Return to main menu"
+    key: "R"
+    default: True
+    use_label_as_key: True
+    hidden: True

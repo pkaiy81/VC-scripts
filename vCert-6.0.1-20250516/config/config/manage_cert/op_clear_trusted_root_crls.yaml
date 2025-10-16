@@ -1,0 +1,6 @@
+type: operation
+title: 'Clear TRUSTED_ROOT_CRLS store in VECS'
+label: 'Clear TRUSTED_ROOT_CRLS store in VECS'
+entry_point:
+  module: operation.manage_certificate
+  method: clear_trusted_root_crls

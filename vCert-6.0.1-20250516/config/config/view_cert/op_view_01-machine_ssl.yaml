@@ -1,0 +1,7 @@
+type: operation
+description: "View machine SSL certificate"
+title:
+label: "Machine SSL certificate"
+entry_point:
+  module: operation.view_certificate
+  method: view_machine_ssl_certificate

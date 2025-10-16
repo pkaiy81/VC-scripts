@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title:
+label: "Replace SPS-extension certificate"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "manage_sps_certificate_with_vmca_signed"

@@ -1,0 +1,13 @@
+type: menu
+description:
+title: "SSL Interception Certificate Management"
+label: "SSL Interception Certificate Management"
+items:
+  - type: multiple
+    config: "config/check_config/ssl_interception/op_*.yaml"
+  - type: navigation:return
+    label: "Return to previous menu"
+    key: "R"
+    default: True
+    hidden: True
+    use_label_as_key: True

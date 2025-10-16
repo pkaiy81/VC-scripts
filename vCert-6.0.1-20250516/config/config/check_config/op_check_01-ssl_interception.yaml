@@ -1,0 +1,7 @@
+type: operation
+description:
+title: "Checking for SSL Interception"
+label: "Check for SSL Interception"
+entry_point:
+  module: operation.check_certificate
+  method: check_ssl_interception

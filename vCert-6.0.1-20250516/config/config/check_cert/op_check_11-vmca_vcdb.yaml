@@ -1,0 +1,7 @@
+type: operation
+description:
+title: 'Checking VMCA Configurations in VCDB'
+label: 
+entry_point:
+  module: operation.check_configuration
+  method: check_vmca_configuration_vcdb

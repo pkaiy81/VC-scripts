@@ -1,0 +1,7 @@
+type: operation
+description: "View STS signing certificates"
+title: "View STS signing certificates"
+label: "STS signing certificates"
+entry_point:
+  module: operation.view_certificate
+  method: view_sts_signing_certificates

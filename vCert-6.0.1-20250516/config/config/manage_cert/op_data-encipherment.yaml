@@ -1,0 +1,11 @@
+type: operation-group
+description: "Manage Data Encipherment certificate"
+title:
+label: "Data Encipherment certificate"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "manage_data_encipherment_certificate"

@@ -1,0 +1,17 @@
+type: operation-group
+description:
+title:
+label: "Generate certificate report"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_header
+  - type: multiple
+    config: config/generate_report/op_*.yaml
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: finalize_report

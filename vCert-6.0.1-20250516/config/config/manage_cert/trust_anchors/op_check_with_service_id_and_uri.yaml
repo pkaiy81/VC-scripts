@@ -1,0 +1,16 @@
+type: operation-group
+description: "Check SSL trust anchors"
+title:
+label: "Show both associated Service IDs and endpoint URIs"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "check_ssl_trust_anchors"
+    arguments:
+      - name: "show_service_id"
+        value: true
+      - name: "show_endpoint_uris"
+        value: true

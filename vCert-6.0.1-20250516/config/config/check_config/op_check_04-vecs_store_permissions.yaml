@@ -1,0 +1,10 @@
+type: operation
+description:
+title: "Checking VECS Stores"
+label: "Check VECS store status and permissions"
+entry_point:
+  module: operation.check_configuration
+  method: check_vecs_store_permissions
+arguments:
+  - name: check_only
+    value: false

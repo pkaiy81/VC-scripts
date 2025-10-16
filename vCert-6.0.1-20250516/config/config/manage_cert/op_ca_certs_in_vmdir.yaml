@@ -1,0 +1,11 @@
+type: operation-group
+description: "Manage CA certificate in VMware Directory"
+title:
+label: "CA certificates in VMware Directory"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "manage_ca_certificates_in_vmdir"

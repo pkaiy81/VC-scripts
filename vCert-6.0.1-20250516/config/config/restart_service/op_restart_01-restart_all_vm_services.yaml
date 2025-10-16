@@ -1,0 +1,7 @@
+type: operation
+description: "Restart all VMware services"
+title:
+label: "Restart all VMware services"
+entry_point:
+  module: operation.restart_service
+  method: restart_vmware_services

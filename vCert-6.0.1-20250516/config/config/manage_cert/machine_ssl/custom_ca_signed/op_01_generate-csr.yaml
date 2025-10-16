@@ -1,0 +1,12 @@
+type: operation
+description:
+title:
+label: "Generate Certificate Signing Request and Private Key"
+entry_point:
+  module: operation.manage_certificate
+  method: generate_csr_and_private_key
+arguments:
+  - name: cert_usage
+    value: "machine-ssl"
+  - name: custom_openssl_config
+    value: false

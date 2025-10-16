@@ -1,0 +1,39 @@
+type: menu
+description: 'Manage certificate'
+title: 'Manage vCenter Certificates'
+label: 'Manage certificates'
+items:
+  - type: single
+    config: 'config/manage_cert/menu_machine_ssl_cert.yaml'
+  - type: single
+    config: 'config/manage_cert/menu_solution_user_cert.yaml'
+  - type: single
+    config: 'config/manage_cert/op_ca_certs_in_vmdir.yaml'
+  - type: single
+    config: 'config/manage_cert/op_ca_certs_in_vecs.yaml'
+  - type: single
+    config: 'config/manage_cert/menu_sms_certs.yaml'
+  - type: single
+    config: 'config/manage_cert/op_data-encipherment.yaml'
+  - type: single
+    config: 'config/manage_cert/op_manage-vc-ext-thumbprints.yaml'
+  - type: single
+    config: 'config/manage_cert/op_sts_signing_certs.yaml'
+  - type: single
+    config: 'config/manage_cert/menu_vmca_cert.yaml'
+  - type: single
+    config: 'config/manage_cert/op_smart_card.yaml'
+  - type: single
+    config: 'config/manage_cert/op_ldaps_identity_source.yaml'
+  - type: single
+    config: 'config/manage_cert/op_clear_expired_backup_store.yaml'
+  - type: single
+    config: 'config/manage_cert/op_clear_trusted_root_crls.yaml'
+  - type: single
+    config: 'config/manage_cert/op_clear_machine_ssl_csr.yaml'
+  - type: navigation:return
+    label: 'Return to main menu'
+    key: 'R'
+    default: True
+    use_label_as_key: True
+    hidden: True

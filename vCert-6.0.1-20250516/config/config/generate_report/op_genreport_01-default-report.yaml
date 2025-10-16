@@ -1,0 +1,37 @@
+type: operation-group
+description:
+title:
+label:
+operations:
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_ca_certs_in_vecs
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_ca_certs_in_vmdir
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_solution_user_certs_in_vmdir
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_sts_tenant_certs
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_ca_certs_sca
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_ca_certs_ad_ldaps
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_certs_in_filesystem
+  - type: single
+    entry_point:
+      module: operation.generate_report
+      method: generate_report_ssl_trust_anchors

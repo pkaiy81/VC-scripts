@@ -1,0 +1,7 @@
+type: operation
+description:
+title: 
+label: 
+entry_point:
+  module: operation.manage_configuration
+  method: manage_sts_configuration

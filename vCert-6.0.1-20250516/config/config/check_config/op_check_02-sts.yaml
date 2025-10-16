@@ -1,0 +1,9 @@
+type: operation-group
+description:
+title: 
+label: 'Check STS server certificate and configuration'
+operations:
+  - type: single
+    config: 'config/op_prevalidate_credential.yaml'
+  - type: single
+    config: 'config/check_config/sts_config/op_check_sts_config.yaml'

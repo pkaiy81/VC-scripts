@@ -1,0 +1,11 @@
+type: operation-group
+description:
+title: "Replace SMS self-signed certificate"
+label: "Replace SMS self-signed certificate"
+operations:
+  - type: single
+    config: "config/op_prevalidate_credential.yaml"
+  - type: single
+    entry_point:
+      module: "operation.manage_certificate"
+      method: "manage_sms_certificate_with_self_signed"

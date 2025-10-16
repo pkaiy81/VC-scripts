@@ -1,0 +1,7 @@
+type: operation
+description: "View data encipherment certificate"
+title:
+label: "Data Encipherment certificate"
+entry_point:
+  module: operation.view_certificate
+  method: view_data_encipherment_certificate

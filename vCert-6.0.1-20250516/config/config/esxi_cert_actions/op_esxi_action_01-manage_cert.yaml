@@ -1,0 +1,7 @@
+type: operation
+description: "Manage ESXi Certificates"
+title: ""
+label: "Check ESXi/vCenter certificate trust"
+entry_point:
+  module: operation.esxi_certificate_operations
+  method: check_esxi_vcenter_trust

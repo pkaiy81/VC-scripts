@@ -1,0 +1,7 @@
+type: operation
+description:
+title: "Checking CA certificates in VECS [by Alias]"
+label:
+entry_point:
+  module: operation.check_certificate
+  method: check_ca_certificates_in_vecs
